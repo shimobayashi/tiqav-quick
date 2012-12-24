@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      body {
+        min-width:357px;
+        overflow-x:hidden;
+      }
+
+      img {
+        width: 357px;
+        display: none;
+      }
+
+      #status {
+        display: none;
+        color: #f33;
+      }
+
+      form {
+        background-color: #ccc;
+      }
+    </style>
+
+    <!-- JavaScript and HTML must be in separate files for security. -->
+    <script src="jquery-1.8.3.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <form id="query-form">
+      <input id="query" type="text" value="" />
+      <button type="submit">コピーする</button>
+      <button id="tiqav" type="button">tiqavで探す</button>
+    </form>
+    <p id="status"></p>
+    <div>
+      <img id="preview" />
+    </div>
+  </body>
+</html>
