@@ -3,7 +3,10 @@
   "version": "0.1",
   "manifest_version": 2,
   "description": "You can pick up awesome image from tiqav so quickly!",
-  "icons": {"48": "icon48.png"},
+  "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+  },
   "background": {
     "page": "background.html"
   },
