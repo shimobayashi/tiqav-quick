@@ -2,7 +2,7 @@
   "name": "tiqav-quick",
   "version": "0.1",
   "manifest_version": 2,
-  "description": "You can pick up awesome image from tiqav so quickly!",
+  "description": "You can pick up awesome image as Markdown from tiqav so quickly!",
   "icons": {
       "48": "icon48.png",
       "128": "icon128.png"

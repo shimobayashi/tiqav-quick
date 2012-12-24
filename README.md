@@ -1,2 +1,2 @@
 # tiqav-quick
-You can pick up awesome image from tiqav so quickly!
+You can pick up awesome image as Markdown from tiqav so quickly!
