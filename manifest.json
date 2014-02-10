@@ -17,6 +17,7 @@
   "permissions": [
     "background",
     "clipboardWrite",
-    "http://*.tiqav.com/"
+    "http://*.tiqav.com/*",
+    "http://api.tiqav.com/*"
   ]
 }
