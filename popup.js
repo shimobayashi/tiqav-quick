@@ -28,11 +28,12 @@ $( function () {
     $(document).on('click', 'img',function(){
         $('img').removeClass('active');
         $(this).addClass('active');
-        $('#query-form').submit();
+        copy();
+        // $('#query-form').submit();
     });
 
-    $('#query-form').submit( function() {
-        var val = $('#query').val();
+    function copy(){
+         var val = $('#query').val();
         if (val != '') {
             var url = $('.active').attr('src');
             chrome.extension.sendRequest({url: url, text: val}, function(response) {
@@ -42,7 +43,7 @@ $( function () {
             updateStatus('クエリーを入力してください');
         }
         return false;
-    });
+    }
 
     $('#tiqav').click( function() {
         var val = $('#query').val();
