@@ -34,8 +34,8 @@ $( function () {
     $('#query-form').submit( function() {
         var val = $('#query').val();
         if (val != '') {
-            var text = $('.active').attr('src');
-            chrome.extension.sendRequest({text: text}, function(response) {
+            var url = $('.active').attr('src');
+            chrome.extension.sendRequest({url: url, text: val}, function(response) {
                 updateStatus('コピーしました');
             });
         } else {
