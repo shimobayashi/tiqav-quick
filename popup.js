@@ -28,6 +28,7 @@ $( function () {
     $(document).on('click', 'img',function(){
         $('img').removeClass('active');
         $(this).addClass('active');
+        $('#query-form').submit();
     });
 
     $('#query-form').submit( function() {
