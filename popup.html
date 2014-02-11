@@ -10,17 +10,35 @@
       }
 
       img {
-        width: 357px;
-        display: none;
+        width: 150px;
+      }
+
+      .active{
+        border: 2px solid red;
       }
 
       #status {
         display: none;
         color: #f33;
+        position: fixed;
+        width: 100%;
+        background: #fff;
+
       }
 
       form {
         background-color: #ccc;
+      }
+
+      #query-form{
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        top: 0px;
+      }
+
+      #preview{
+        padding-top: 25px;
       }
     </style>
 
@@ -31,12 +49,12 @@
   <body>
     <form id="query-form">
       <input id="query" type="text" value="" />
-      <button type="submit">コピーする</button>
       <button id="tiqav" type="button">tiqavで探す</button>
     </form>
-    <p id="status"></p>
-    <div>
-      <img id="preview" />
+    <div id="preview">
+      <p id="status"></p>
+      <div id="preview-data">
+      </div>
     </div>
-  </body>
+ </body>
 </html>

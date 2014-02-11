@@ -10,6 +10,7 @@
   "background": {
     "page": "background.html"
   },
+  "options_page": "options.html",
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
@@ -17,6 +18,7 @@
   "permissions": [
     "background",
     "clipboardWrite",
-    "http://*.tiqav.com/"
+    "http://*.tiqav.com/*",
+    "http://api.tiqav.com/*"
   ]
 }
