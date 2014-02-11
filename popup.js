@@ -28,8 +28,6 @@ $( function () {
     $(document).on('click', 'img',function(){
         $('img').removeClass('active');
         $(this).addClass('active');
-        console.log($(this));
-        console.log('clicked');
     });
 
     $('#query-form').submit( function() {
@@ -37,7 +35,6 @@ $( function () {
         if (val != '') {
             var text = $('.active').attr('src');
             chrome.extension.sendRequest({text: text}, function(response) {
-                console.log(response.text);
                 updateStatus('コピーしました');
             });
         } else {
